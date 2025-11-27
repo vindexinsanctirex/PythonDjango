@@ -1,3 +1,3 @@
 .tables
 
-SELECT * from auth_user;
+SELECT * from agenda_post;
