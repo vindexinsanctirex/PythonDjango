@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda Django</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>Agenda Django</h1>
+    <h2>Lista de Contatos</h2>
+    <ul>
+        {% for post in post_list %}
+            <li>{{ post.title }} <br> {{ post.content }} - Criado em: {{ post.created_at }}</li><hr>
+        {% endfor %}
+    </ul>
 </body>
 </html>
